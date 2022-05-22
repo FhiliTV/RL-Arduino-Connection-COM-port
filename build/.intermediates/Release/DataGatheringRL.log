@@ -1,0 +1,18 @@
+﻿  DataGatheringRL.cpp
+  DataGatheringRLGUI.cpp
+  Definitions.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(250,1): warning C4099: 'HINSTANCE__': type name first seen using 'class' now seen using 'struct' (compiling source file DataGatheringRLGUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(250): message : see declaration of 'HINSTANCE__' (compiling source file DataGatheringRLGUI.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(250,1): warning C4099: 'HINSTANCE__': type name first seen using 'class' now seen using 'struct' (compiling source file DataGatheringRL.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(250): message : see declaration of 'HINSTANCE__' (compiling source file DataGatheringRL.cpp)
+     Creating library C:\Users\Phil\source\repos\DataGatheringRL\plugins\DataGatheringRL.lib and object C:\Users\Phil\source\repos\DataGatheringRL\plugins\DataGatheringRL.exp
+  Generating code
+  21 of 1267 functions ( 1.7%) were compiled, the rest were copied from previous compilation.
+    19 functions were new in current compilation
+    4 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  DataGatheringRL.vcxproj -> C:\Users\Phil\source\repos\DataGatheringRL\plugins\DataGatheringRL.dll
+  01:56:09 [34m[INFO] [0mUnloading DataGatheringRL
+  01:56:10 [34m[INFO] [0mCopying plugin to C:\Users\Phil\AppData\Roaming\bakkesmod\bakkesmod/plugins\DataGatheringRL.dll
+  01:56:10 [34m[INFO] [0mLoading DataGatheringRL
+  01:56:10 [34m[INFO] [0mDone
