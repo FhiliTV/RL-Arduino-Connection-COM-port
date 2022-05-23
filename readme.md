@@ -1,6 +1,6 @@
-### BakkesMod plugin COM port connection
+# BakkesMod plugin COM port connection
 
-# Created with template using Visual Studio 2019. Do not use VS 2022
+#### Created with template using Visual Studio 2019. Do not use VS 2022
 
 This Bakkesmod application allows you to connect to a COM port which should allow you to connect to a microcontroller such as an Arduino or Raspberry Pi
 This main purpose of this application is so that you can gather information about the game and store that information on a microcontroller that can eventually be manipulated or used to do cool things.
