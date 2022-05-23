@@ -43,7 +43,6 @@ public:
 
 	//data gathering
 	void			setPlayerName(std::string name);
-	bool			replayCheck();
 	void			HookEvent();
 	void			sendToArduino();
 
@@ -51,7 +50,7 @@ public:
 	void			connectToSerialPort();
 	void			disconnectFromSerialPort();
 	void			SerialPort(const char* portName);
-	int readSerialPort(char* buffer, unsigned int buf_size);
+	int				readSerialPort(char* buffer, unsigned int buf_size);
 	bool			writeSerialPort(char* buffer, unsigned int buf_size);
 	bool			isConnected();
 	

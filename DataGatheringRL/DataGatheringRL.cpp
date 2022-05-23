@@ -5,7 +5,6 @@
 BAKKESMOD_PLUGIN(DataGatheringRL, "A data gatherer that can connect to a COM port and send data to be used by a micro controller", plugin_version, PERMISSION_ALL)
 
 std::shared_ptr<CVarManagerWrapper> _globalCvarManager;
-static bool paused = false;
 
 /// <summary>
 /// OnLoad and Hook Events
@@ -30,18 +29,21 @@ void DataGatheringRL::setPlayerName(std::string name)
 	ownerName = name;
 }
 
-bool DataGatheringRL::replayCheck()
-{
-	if (!gameWrapper->IsInReplay()) { return 1; }
-	return 0;
-}
+// events caller
 
-//events caller
-//do not hard code function... add to Functions.cpp
 void DataGatheringRL::HookEvent() {
 
+	/****
+	* 
+	* This is an example of how to get a hook event to get called to the arduino. 
+	* That just gets the boost amount for the local car that I used for a real time boost meter with addressable LED's.
+	* You can use a caller hook event if you want but you need to uncomment the template in the .h file. Use that at your own risk o.O.
+	* Make sure to null check if you don't want the crashing.
+	* 
+	*****/
+	
 	//only gets the Local cars change in boost. For all cars boost, check CommentedForLater.txt in resource files.
-	gameWrapper->HookEvent("Function TAGame.GFxData_LocalCar_TA.BoostPercentageChanged", [this](std::string eventName)
+	/*gameWrapper->HookEvent("Function TAGame.GFxData_LocalCar_TA.BoostPercentageChanged", [this](std::string eventName)
 	{
 		boostAmount = static_cast<int>(gameWrapper->GetLocalCar().GetBoostComponent().GetCurrentBoostAmount() * 100);
 		if (boostAmount == lastBoostAmount) { return; };
@@ -53,7 +55,7 @@ void DataGatheringRL::HookEvent() {
 		{
 			sendToArduino();
 		}
-	});
+	});*/
 	
 
 }
